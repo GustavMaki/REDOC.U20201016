@@ -1,22 +1,25 @@
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keyt35p1SiFUhVcYH'}).base('appw9OO3eoSUmoKdt');
+url =`https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Receipt%20Log?api_key=keyt35p1SiFUhVcYH`;
 
-base('Receipt Log').select({
-    // Selecting the first 3 records in Main View:
-    maxRecords: 3,
-    view: "Main View"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
+fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        const { records} = data;
+  
+        for(var i=0; i < data.records.length ; i++){
+        const li = document.createElement("li");
+        li.classList.add("utgifter");
 
-    records.forEach(function(record) {
-        console.log('Retrieved', record.get('Short Description'));
-    });
-
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
+  
+        const markup = `
+          <div id= "result">
+              <p>Namn: ${data.records[i].fields.Name} | Pris: ${data.records[i].fields.Total} $<p>
+          </div>
+        `;
+       
+        li.innerHTML = markup;
+        document.getElementById("utgifter").appendChild(li);
+     }
+      })
+    
+     
+    
