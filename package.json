@@ -14,5 +14,18 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.5",
     "pug": "^3.0.0"
-  }
+  },
+  "main": "./bin/www",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavMaki/REDOC.U20201016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavMaki/REDOC.U20201016/issues"
+  },
+  "homepage": "https://github.com/GustavMaki/REDOC.U20201016#readme",
+  "description": ""
 }

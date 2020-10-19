@@ -2,9 +2,16 @@ extends updatelayout
 
 block content
   h1 Update
-  p 
-
-  
+  form
+      input(type="text", id="updateName", name="updateName", placeholder="Namn:")
+      br
+      input(type="number", id="updatePrice", name="updatePrice", placeholder="Pris:")
+      br
+      input(type="text", id="updateDescription", name="updateDescription", placeholder="Namn:")
+      br
+      input(type="date", id="updateDate", name="updateDate", placeholder="Namn:")
+      br
+      input(type="submit", value="Update", id="txtButton")
 
   div.weather
     ul#utgifter

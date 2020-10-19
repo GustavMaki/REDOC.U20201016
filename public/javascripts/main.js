@@ -13,8 +13,8 @@ fetch(url)
         const markup = `
           <div id= "result">
               <p>Namn: ${data.records[i].fields.Name} | Pris: ${data.records[i].fields.Total} $<p> 
-              <button name="update" type="submit" value="${data.records[i].id}">Update</button>
-              <button name="update" type="submit" value="${data.records[i].id}">Delete</button>
+              <a href="/update?=${i}" id="update">Update</a>
+              <a href ="" id="delete" type="submit" value="${data.records[i].id}">Delete</a>
           </div>
         `;
        
@@ -22,6 +22,6 @@ fetch(url)
         document.getElementById("utgifter").appendChild(li);
      }
       })
-    
+
      
     
