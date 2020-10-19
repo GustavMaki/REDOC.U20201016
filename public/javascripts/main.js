@@ -13,8 +13,8 @@ fetch(url)
         const markup = `
           <div id= "result">
               <p>Namn: ${data.records[i].fields.Name} | Pris: ${data.records[i].fields.Total} $<p> 
-              <a href="/update?=${i}" id="update">Update</a>
-              <a href ="" id="delete" type="submit" value="${data.records[i].id}">Delete</a>
+              <a href="/update?=${data.records[i].id}" id="update">Update</a>
+              <a href="/list" id="update" value= "${data.records[i].id}">Delete</a>
           </div>
         `;
        
