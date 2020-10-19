@@ -8,14 +8,14 @@
   Tryck på Add och tas till en sida med ett formulär där nya produkter kan läggas till.
   
   
-  #RELEASER/FUNKTIONER
+# RELEASER/FUNKTIONER
     KLARA:
       Add, List, Update
     IN PROGRESS:
       Delete
       
       
-  #UX/CSS
+# UX/CSS
   *In Progress*
     Färger: Grå & Röd
     Centrerade objekt
