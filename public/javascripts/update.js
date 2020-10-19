@@ -9,9 +9,6 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 id = urlParams.get('');
 
-document.querySelector("form").addEventListener("submit", e => {
-   e.preventDefault();
-
 url =`https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Receipt%20Log/${id}`;
 
 const addData = {
@@ -27,7 +24,5 @@ headers: {'Authorization': 'Bearer keyt35p1SiFUhVcYH', 'Content-Type': 'applicat
 .then(response => response.json())
 .then(json => console.log(json))
 .catch(err => console.log (err));
-
-});
 
 });
