@@ -55,3 +55,20 @@ ul#utgifter {
     display: grid;
     width:50px
   }
+
+  #addName {
+    margin:auto;
+    display: grid;
+  }
+  #addPrice {
+    margin:auto;
+    display: grid;
+  }
+  #addDescription {
+    margin:auto;
+    display: grid;
+  }
+  #txtButton {
+    margin:auto;
+    display: grid;
+  }
