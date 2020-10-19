@@ -2,9 +2,15 @@ extends addlayout
 
 block content
   h1 Add
+  a(href= "/") Tillbaka
+  form
+      input(type="text", id="addName", placeholder="Namn:")
+      br
+      input(type="number", id="addPrice", placeholder="Pris:")
+      br
+      input(type="text", id="addDescription", placeholder="Beskrivning:")
+      br
+      input(type="submit", value="Update", id="txtButton")
   
-
-  
-
   div.weather
     ul#utgifter
