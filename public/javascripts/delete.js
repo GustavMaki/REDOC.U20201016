@@ -1,5 +1,7 @@
-return fetch('https://airtable.com/tblaqz1Qcb2OUbTVp/viwd6xEcQWuKZurcX?blocks=hide', {
-        method: 'DELETE',
-        id: button.pressed
-       
-    }).then(response => response.json())
+
+
+/* fetch('https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Receipt%20Log?api_key=keyt35p1SiFUhVcYH', {
+        method: 'DELETE'
+    })
+    .then(response => response.json()) */
+    
