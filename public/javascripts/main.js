@@ -14,7 +14,7 @@ fetch(url)
           <div id= "result">
               <p>Namn: ${data.records[i].fields.Name} | Pris: ${data.records[i].fields.Total} $<p> 
               <a href="/update?=${data.records[i].id}" id="update">Update</a>
-              <a href="/list" id="update" value= "${data.records[i].id}">Delete</a>
+              <a href="/delete?=${data.records[i].id}" id="update" src = "delete.js">Delete</a>
           </div>
         `;
        
