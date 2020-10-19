@@ -56,15 +56,15 @@ ul#utgifter {
     width:50px
   }
 
-  #addName {
+  #addName, #updateName {
     margin:auto;
     display: grid;
   }
-  #addPrice {
+  #addPrice, #updatePrice {
     margin:auto;
     display: grid;
   }
-  #addDescription {
+  #addDescription, #updateDescription {
     margin:auto;
     display: grid;
   }
