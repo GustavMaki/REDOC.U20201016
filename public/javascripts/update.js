@@ -13,7 +13,7 @@ url =`https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Receipt%20Log/${id}`;
 
 const addData = {
    "fields":{
-       "Name" : name,
+       "Name" : name,h
        "Total" : parseInt(price),
        "Description" : description
    }

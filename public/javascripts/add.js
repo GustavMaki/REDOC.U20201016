@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", e => {
     e.preventDefault();
 
-url ='https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Receipt%20Log';
+url ='https://api.airtable.com/v0/appw9OO3eoSUmoKdt/Notes';
 
 let name = document.getElementById("addName").value;
 var price = document.getElementById("addPrice").value;
@@ -9,9 +9,8 @@ var description = document.getElementById("addDescription").value;
 
 const addData = {
     "fields":{
-        "Name" : name,
-        "Total" : parseInt(price),
-        "Description" : description
+        "Title" : name,
+        "Content" : description
     }
 }
 
